@@ -1,0 +1,91 @@
+/* css reset */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* custom properties */
+
+:root{
+    --title-color: #e53170;
+    --mail-color: #2ea4e1;
+
+    --title-size: 3rem;
+    --p-size: 1.2rem;
+
+    --big-spacing: 3rem 0;
+    --card-spacing: 0.5rem 1rem;
+
+    --img-margin: 0.7rem;
+}
+
+/* generics */
+
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    margin: var(--big-spacing);
+}
+
+h1{
+    font-size: var(--title-size);
+    text-align: center;
+    color: var(--title-color);
+}
+
+h4 {
+    font-weight: 400;
+}
+
+p{
+    text-align: justify;
+    font-size: var(--p-size);
+    margin: var(--big-spacing);
+}
+
+/* utility */
+
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.row {
+    display: flex;
+    margin: 0 -1rem;
+}
+
+/* cards */
+
+.cards {
+    height: 100px;
+    width: calc(100% / 3);
+    background-color: black;
+    display: flex;
+    margin: var(--card-spacing);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-card {
+    height: 100%;
+    margin-right: var(--img-margin);
+}
+
+.card-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-info > a {
+    text-decoration: none;
+    color: var(--mail-color); 
+}
